@@ -87,3 +87,8 @@ if(mentira){
 else{
     console.log("ni modo");
 }
+
+//calculadora
+//textbox
+//botones
+//js
