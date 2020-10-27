@@ -88,17 +88,18 @@ function init(){
     }
 
 }
-
+// iniciar en ceros la calculadora
 function reseting(){
     resultado.textContent="";
     op1=0;
     op2=0;
     op="";
 }
+// funcion para limpiar la pantalla de la calculadora
 function clean(){
     resultado.textContent="";
 }
-
+// Aqui se hacen las operaciones 
 function solve(){
     var result=0;
 
