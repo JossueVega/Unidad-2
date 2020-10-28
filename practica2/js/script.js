@@ -86,14 +86,16 @@ function init(){
         op2=resultado.textContent;
         solve();
     }
-}
 
+}
+// iniciar en ceros la calculadora
 function reseting(){
     resultado.textContent="";
     op1=0;
     op2=0;
     op="";
 }
+// funcion para limpiar la pantalla de la calculadora
 function clean(){
     resultado.textContent="";
 }
