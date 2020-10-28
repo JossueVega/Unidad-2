@@ -5,8 +5,8 @@
     padding: 20px;
     width: 330px;
     height: 500px;
-    border-radius: 25px;
-    
+    border-radius: 27px;
+    background-color: rgb(47, 47, 48);
 }
 .calc td button{
     display: block;
@@ -24,8 +24,8 @@
     width: 300px;
     height: 100px;
     line-height: 100px;
-    background-color: #c3c0c0;
+    background-color: #fdfdfd;
     border-radius: 25px;
-    overflow-y: scroll;
+    
    
 }
