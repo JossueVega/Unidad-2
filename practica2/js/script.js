@@ -63,7 +63,29 @@ function init(){
         clean();
         console.log(op1);
     }
+    resta.onclick=function(e){
+        op1=resultado.textContent;
+        op='-';
+        clean();
+        console.log(op1);
+    }
 
+    multi.onclick=function(e){
+        op1=resultado.textContent;
+        op='*';
+        clean();
+        console.log(op1);
+    }
+    divi.onclick=function(e){
+        op1=resultado.textContent;
+        op='/';
+        clean();
+        console.log(op1);
+    }
+    igual.onclick=function(e){
+        op2=resultado.textContent;
+        solve();
+    }
 }
 
 function reseting(){
@@ -74,4 +96,30 @@ function reseting(){
 }
 function clean(){
     resultado.textContent="";
+}
+// Aqui se hacen las operaciones 
+function solve(){
+    var result=0;
+
+    switch (op) {
+        case '-':
+           result=parseFloat(op1)-parseFloat(op2); 
+            break;
+
+        case '+':
+            result=parseFloat(op1)+parseFloat(op2); 
+            break;
+        case '*':
+            result=parseFloat(op1)*parseFloat(op2); 
+            break;
+        case '/':
+            result=parseFloat(op1)/parseFloat(op2); 
+            break;
+
+        default:
+            break;
+    }
+
+    clean();
+    resultado.textContent=result;
 }
